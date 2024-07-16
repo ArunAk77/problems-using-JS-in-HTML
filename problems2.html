@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*--------------------------------------rotating an array-----------------------------*/
+
+        let Arr = ['kumar', 'is born to', 'win', 'arun'];
+
+function arrayRotate(arr) {
+	arr.unshift(arr.pop());
+	return arr;
+}
+
+function ans() {
+	let rotateArr = arrayRotate(Arr);
+	console.log("Elements of array = ["
+		+ rotateArr + "]");
+}
+ans();
+        /*-------------------------------------remove element by index------------------*/
+        
+        const array = [2,5,9,8,4];
+
+console.log(array);
+
+const index = array.indexOf(5);
+if (index > -1) { 
+  array.splice(index, 1); 
+}
+console.log(array);
+/*----------------------array searching---------------------------------------*/
+
+const ages = [3, 10, 18, 20];
+
+function checkAge(age) {
+  return age > 18;
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ages.find(checkAge);
+}
+/*------------------------------------arr creation------------------------*/
+   let arr1=["ele1","ele2","ele3","ele4"]
+   console.log("ARRAY elements are :" +arr1);
+     
+   /*-------------------largest number--------------*/
+
+   function large(arr){
+            let max=arr[0];
+            for(let i=1;i<arr.length;i++){
+                if(arr[i]>max)
+                max=arr[i];
+            }
+            return max;
+        }
+        let arr=[22,34,32,54,67,45];
+        console.log("Largest num is : " +large(arr));
+
+    </script>
+</body>
+</html>
